@@ -3,7 +3,9 @@ from keras.models import load_model
 import onnxmltools
 import keras2onnx
 import tensorflow as tf
+
 print(tf.version.VERSION)
+# 1.14.0
 
 
 # carregando nosso modelo do keras
