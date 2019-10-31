@@ -1,6 +1,6 @@
 import onnx
 
-onnx_model = onnx.load('modelo_analise_sentimento.onnx')
+onnx_model = onnx.load('./modelo/modelo_analise_sentimento.onnx')
 
 endpoint_names = ['predictions/Softmax:0']
 
@@ -35,4 +35,4 @@ for i in range(len(onnx_model.graph.output)):
 		print(onnx_model.graph.output[i])
 		onnx_model.graph.output[i].name = onnx_model.graph.output[i].name.split(':')[0].replace('/Softmax', '')
 
-onnx.save(onnx_model, 'model_mod.onnx')
+onnx.save(onnx_model, './modelo/modelo_analise_sentimento_v2.onnx')
