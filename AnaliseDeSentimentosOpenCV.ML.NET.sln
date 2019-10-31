@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F7865D8B-A7E2-42C2-9555-7516C3E571E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "python", "python", "{7FBBC3C9-B929-4798-9ED4-B4D751166901}"
+	ProjectSection(SolutionItems) = preProject
+		src\python\converter_keras_to_onnx.py = src\python\converter_keras_to_onnx.py
+		src\python\corrigir_modelo_onnx.py = src\python\corrigir_modelo_onnx.py
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modelo", "modelo", "{4253930E-AF9E-4A00-A607-CE00F951EC0A}"
+	ProjectSection(SolutionItems) = preProject
+		src\python\modelo\fer2013_mini_XCEPTION.107-0.66.hdf5 = src\python\modelo\fer2013_mini_XCEPTION.107-0.66.hdf5
+		src\python\modelo\modelo_analise_sentimento.onnx = src\python\modelo\modelo_analise_sentimento.onnx
+		src\python\modelo\modelo_analise_sentimento_v2.onnx = src\python\modelo\modelo_analise_sentimento_v2.onnx
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnaliseDeSentimentosOpenCV.ML.NET", "src\AnaliseDeSentimentosOpenCV.ML.NET\AnaliseDeSentimentosOpenCV.ML.NET.csproj", "{6606F4E8-2182-4C15-BA85-9A8B6BC2FB68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6606F4E8-2182-4C15-BA85-9A8B6BC2FB68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6606F4E8-2182-4C15-BA85-9A8B6BC2FB68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6606F4E8-2182-4C15-BA85-9A8B6BC2FB68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6606F4E8-2182-4C15-BA85-9A8B6BC2FB68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4253930E-AF9E-4A00-A607-CE00F951EC0A} = {7FBBC3C9-B929-4798-9ED4-B4D751166901}
+		{6606F4E8-2182-4C15-BA85-9A8B6BC2FB68} = {F7865D8B-A7E2-42C2-9555-7516C3E571E2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1F24BCD-2211-4863-8A8E-1A590201FE77}
+	EndGlobalSection
+EndGlobal
